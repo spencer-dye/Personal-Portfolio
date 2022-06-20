@@ -81,6 +81,7 @@ section {
   font-family: "IBM Plex Mono";
   font-size: 0.85em;
   letter-spacing: 0.4;
+  text-decoration: none;
   position: relative;
   left: 0.125em;
   cursor: pointer;
@@ -89,6 +90,40 @@ section {
 .right-fixed-email a:hover {
   color: #779BE7;
   transform: translateY(-0.25em);
+}
+
+.left-fixed-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 3.5em;
+  z-index: 3;
+}
+.left-fixed-icons li {
+  width: 1.5em;
+  height: 1.5em;
+  background-size: cover;
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.left-fixed-icons li:hover {
+  transform: translateY(-0.25em);
+}
+.left-fixed-icons .github {
+  background-image: url(images/github-icon.svg);
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.left-fixed-icons .github:hover {
+  background-image: url(images/github-icon-clr.svg);
+}
+.left-fixed-icons .linkedin {
+  background-image: url(images/linkedin-icon.svg);
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.left-fixed-icons .linkedin:hover {
+  background-image: url(images/linkedin-icon-clr.svg);
 }
 
 .typed-text {
@@ -113,7 +148,7 @@ section {
 }
 
 .nav__container {
-  max-width: 77em;
+  max-width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -249,7 +284,7 @@ section {
 }
 
 .short-line {
-  height: 6em;
+  height: 5em;
   width: 2px;
   background-color: #bababa;
   margin-top: 1.25em;
@@ -314,8 +349,17 @@ section {
   max-width: 54ch;
 }
 
-@media all and (max-width: 1080px) {
+.is--icon-btm-margin {
+  margin-bottom: 1em;
+}
+
+.is--clr-bg {
+  margin: 4em 0 0 0;
+  background-color: #C0C8FC;
+}
+
+@media only screen and (min-width: 1580px) {
   body {
-    font: 0.9888em;
+    font-size: 1.1em;
   }
 }/*# sourceMappingURL=style.css.map */

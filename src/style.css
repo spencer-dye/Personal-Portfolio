@@ -8,7 +8,7 @@
 
 body {
   font-family: "Titillium Web", sans-serif;
-  font-size: 1vw;
+  font-size: 1.1111111111vw;
   background-color: #F5F6F7;
   max-width: 100%;
   overflow-x: hidden;
@@ -16,9 +16,8 @@ body {
 
 p {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 500;
-  max-width: 47ch;
   line-height: 1.5;
 }
 
@@ -35,12 +34,13 @@ nav {
 }
 nav a {
   font-family: "IBM Plex Mono";
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 500;
   color: black;
   text-decoration: none;
   padding: 0 0.25em;
   margin: 0 0.75em;
+  transition: color 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 nav a:hover {
   color: #779BE7;
@@ -50,7 +50,7 @@ nav a:hover {
 h1 {
   color: black;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 4.25em;
   line-height: 1.2;
 }
 
@@ -64,6 +64,33 @@ section {
 }
 
 /* Classes */
+.right-fixed-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 3.5em;
+  z-index: 3;
+}
+.right-fixed-email a {
+  color: #9C9D9E;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "IBM Plex Mono";
+  font-size: 0.85em;
+  letter-spacing: 0.4;
+  position: relative;
+  left: 0.125em;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.right-fixed-email a:hover {
+  color: #779BE7;
+  transform: translateY(-0.25em);
+}
+
 .typed-text {
   color: #779BE7;
 }
@@ -86,7 +113,7 @@ section {
 }
 
 .nav__container {
-  max-width: 70em;
+  max-width: 77em;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -96,13 +123,14 @@ section {
 
 .btn {
   padding: 0.385em 1.35em;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 500;
   font-family: "IBM Plex Mono";
   background-color: #C0C8FC;
   border: 2px solid black;
   border-radius: 0.25em;
   cursor: pointer;
+  transition: background-color 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .btn:hover {
@@ -118,19 +146,19 @@ section {
 .color-gradient-2 {
   position: absolute;
   top: 22em;
-  width: 40em;
+  width: 45em;
 }
 
 .orbit-container-1 {
   position: absolute;
-  right: 19em;
-  top: -18em;
+  right: 20em;
+  top: -16em;
 }
 
 .orbit-container-2 {
   position: absolute;
   top: 40em;
-  left: -25em;
+  left: -30em;
 }
 
 .inner-orbit {
@@ -190,7 +218,7 @@ section {
   }
 }
 .btn-wrap {
-  padding-top: 1.2em;
+  padding-top: 1.75em;
 }
 
 .logo {
@@ -203,13 +231,14 @@ section {
 
 .container {
   position: relative;
-  max-width: 70em;
+  max-width: 68.75em;
   margin: 0 auto;
   z-index: 1;
 }
 
 .illustration {
-  width: 24em;
+  width: 25em;
+  margin-left: 7em;
 }
 
 .style-line {
@@ -217,6 +246,13 @@ section {
   width: 12em;
   background-color: #9C9D9E;
   margin-left: 1.5em;
+}
+
+.short-line {
+  height: 6em;
+  width: 2px;
+  background-color: #bababa;
+  margin-top: 1.25em;
 }
 
 .heading-wrap {
@@ -239,13 +275,47 @@ section {
   margin-bottom: 0.5em;
 }
 
+.headshot {
+  width: 17em;
+  border-radius: 0.25em;
+  margin-left: 5em;
+  position: relative;
+  top: 3em;
+  z-index: 2;
+}
+
+.headshot__square {
+  width: 17em;
+  position: absolute;
+  top: 4em;
+  right: -1em;
+}
+
+.headshot__container {
+  position: relative;
+}
+
 /* Global Modifiers */
 .is--btm-margin {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.35em;
 }
 
 .is--split {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
+}
+
+.is--47ch {
+  max-width: 47ch;
+}
+
+.is--54ch {
+  max-width: 54ch;
+}
+
+@media all and (max-width: 1080px) {
+  body {
+    font: 0.9888em;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -330,6 +330,20 @@ section {
   position: relative;
 }
 
+.project__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__thumbnail-wrap {
+  position: relative;
+}
+
+.thumbnail-bg-square {
+  position: absolute;
+  left: 0;
+}
+
 /* Global Modifiers */
 .is--btm-margin {
   margin-bottom: 0.35em;
@@ -356,6 +370,11 @@ section {
 .is--clr-bg {
   margin: 4em 0 0 0;
   background-color: #C0C8FC;
+}
+
+.is--column-layout {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 1580px) {

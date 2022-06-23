@@ -15,10 +15,10 @@
                 <img src="images/logo.svg" class="logo">
             </a>
             <div>
-                <a href="#" class="nav__link">Contact</a>
-                <a href="#" class="nav__link">Work</a>
-                <a href="#" class="nav__link">About</a>
-                <button class="btn">Resume</button>
+                <a href="#contact" class="nav__link">Contact</a>
+                <a href="#work" class="nav__link">Work</a>
+                <a href="#about" class="nav__link">About</a>
+                <a class="btn" href="./documents/Fundamental-Web-Development-Skills.pdf" target="_blank">Resume</a>
             </div>
         </div>
     </nav>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="about">
             <div class="container is--split">
                 <div>
                     <div class="heading-wrap">
@@ -104,7 +104,7 @@
                     </div>
             </div>
         </section>
-        <section class="is--clr-bg">
+        <section class="is--clr-bg" id="work">
             <div class="container is--column-layout">
                 <div class="heading-wrap">
                     <h2>Featured Projects</h2>
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                         <div class="btn-wrap">
-                            <button class="btn-alt">View details</button>
+                            <button class="btn-alt"onclick="document.location='./iouio.html'">View details</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                                 <p class="alt-tag">CSS3</p>
                                 <p class="alt-tag">JavaScript</p>
                             </div>
-                            <p class="is--47ch">A simple, yet robust password generator that allow the user to choose the length, character parameters and has a 1-click copy feature.</p>
+                            <p class="is--47ch">A simple, yet robust password generator that allows the user to choose the length, character parameters and has a 1-click copy feature.</p>
                             <div class="project__links-wrap">
                                 <div class="project__link-item">
                                     <img src="images/www-icon.svg" class="project__icon">
@@ -196,7 +196,7 @@
                     </div>
             </div>
         </section>
-        <section>
+        <section class="is--btm-pad" id="contact">
             <div class="container">
                 <div class="heading-wrap is--btm-margin">
                     <h2>Contact Me</h2>
@@ -223,9 +223,30 @@
                         <input type="submit" class="btn" value="Submit form">
                     </div>
                 </form>
+                <div class="contact__info-wrap">
+                    <div class="contact__item">
+                        <img src="images/mail icon.svg">
+                        <a href="mailto:sdye9699@gmail.com">
+                            <p>sdye9699@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="contact__item">
+                        <img src="images/eye-icon.svg">
+                        <p>Looking for new opportunities</p>
+                    </div>
+                    <div class="contact__item">
+                        <img src="images/location icon.svg">
+                        <p>United States</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container is--center-align">
+            <p>Designed & Developed by Spencer Dye ©2022</p>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   background-color: #F5F6F7;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 p {
@@ -234,6 +236,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn {
   padding: 0.385em 1.35em;
+  color: #000000;
   font-size: 1em;
   font-weight: 500;
   font-family: "IBM Plex Mono";

@@ -894,6 +894,11 @@ body::-webkit-scrollbar-thumb {
             text-decoration: underline;
         }
 
+        span {
+            width: 100%;
+            height: 100%;
+        }
+
         .btn {
             padding: .385em 1.35em;
             color: #000000;

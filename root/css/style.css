@@ -878,6 +878,10 @@ body::-webkit-scrollbar-thumb {
     color: #779BE7;
     text-decoration: underline;
   }
+  .mobile-nav span {
+    width: 100%;
+    height: 100%;
+  }
   .mobile-nav .btn {
     padding: 0.385em 1.35em;
     color: #000000;

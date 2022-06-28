@@ -7,14 +7,36 @@
     <title>Spencer Dye</title>
     <link href="./css/style.css" rel="stylesheet">
     <script src="./js/script.js" defer></script>
+    <script src="./js/typed.js" defer></script>
 </head>
 <body>
-    <nav>
+    <div class="mobile-nav menu-hide" id="mobileNav">
+        <ul>
+            <li>
+                <a href="#contact" onclick="menuClose()">Contact</a>
+            </li>
+            <li>
+                <a href="#work" onclick="menuClose()">Work</a>
+            </li>
+            <li>
+                <a href="#about" onclick="menuClose()">About</a>
+            </li>
+            <li>
+                <a class="btn" href="./documents/Fundamental-Web-Development-Skills.pdf" target="_blank" onclick="menuClose()">Resume</a>
+            </li>
+        </ul>
+    </div>
+    <nav id="nav">
         <div class="nav__container">
             <a href="#">
                 <img src="images/logo.svg" class="logo">
             </a>
             <div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="m-line-1"></div>
+                    <div class="m-line-2"></div>
+                    <div class="m-line-3"></div>
+                </div>
                 <a href="#contact" class="nav__link">Contact</a>
                 <a href="#work" class="nav__link">Work</a>
                 <a href="#about" class="nav__link">About</a>
@@ -91,7 +113,7 @@
                         <div class="style-line"></div>
                     </div>
                         <p class="is--54ch">
-                            Hi, my name is Spencer! I’m a front end developer and part-time designer.
+                            Hi, my name is Spencer! I’m a front end developer and part-time designer with over 2 years professional experience.
                             I got started with design back in 2016.
                             Then I started freelancing in 2020, which gave me my first taste of web design and development.
                             I then moved up to doing web development at a marketing agency in 2021 and now I’m pursuing a more 
@@ -158,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="btn-wrap">
-                                <button class="btn-alt">View details</button>
+                                <button class="btn-alt" onclick="document.location='./securepass.html'">View details</button>
                             </div>
                         </div>
                         <div class="project__thumbnail-wrap">
@@ -166,7 +188,7 @@
                             <img src="images/thumbnail bg square.svg" class="thumbnail-bg-square">
                         </div>
                     </div>
-                    <div class="project__wrap">
+                    <!-- <div class="project__wrap">
                         <div class="project__thumbnail-wrap">
                             <img src="images/iou thumbnail.jpg" alt="A picture of the SecurePass passsword generator app" class="project__thumbnail">
                             <img src="images/thumbnail bg square.svg" class="thumbnail-bg-square-alt">
@@ -193,7 +215,7 @@
                                 <button class="btn-alt">View details</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
             </div>
         </section>
         <section class="is--btm-pad" id="contact">
@@ -207,8 +229,8 @@
                     <label for="name">Hey, my name is </label>
                     <input type="text" name="name" id="name" placeholder="enter name" required>
                     <label for="select">and I want to </label>
-                    <img src="images/dropdown arrow.svg" class="dd-arrow">
                     <select name="select" id="select" required>
+                        <img src="images/dropdown arrow.svg" class="dd-arrow">
                         <option value="" disabled selected hidden>select one</option>
                         <option value='hire you'>hire you</option>
                         <option value="start a project">start a project</option>

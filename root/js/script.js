@@ -1,18 +1,18 @@
-var typed = new Typed(".typed-text", {
-    strings: [
-      "^1000 Develop", 
-      "^1000 Design",
-      "^1000 Problem Solve", 
-      "^1000 Build",
-      "^1000 Learn",
-    ],
-    typeSpeed: 65,
-    backSpeed: 50,
-    backDelay: 2000,
-    startDelay: 250,
-    smartBackspace: true, //Default value
-    loop: true,
-    showCursor: false,
-    cursorChar: "|",
-    attr: null,
-  });
+  let mobileMenu = document.getElementById("mobileMenu")
+  let mobileNav = document.getElementById("mobileNav")
+  let nav = document.getElementById('nav')
+  let menuStatus = false
+
+  mobileMenu.addEventListener('click', menuClose)
+
+  function menuClose() {
+    if(menuStatus === false) {
+      mobileNav.classList.remove('menu-hide')
+      nav.classList.add('menu-open')
+      menuStatus = true
+    } else {
+      mobileNav.classList.add('menu-hide')
+      nav.classList.remove('menu-open')
+      menuStatus = false
+    }
+  }

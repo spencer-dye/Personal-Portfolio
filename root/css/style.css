@@ -779,7 +779,7 @@ body::-webkit-scrollbar-thumb {
   nav {
     width: 95%;
     margin: 0 auto;
-    top: 1em;
+    top: 0.5em;
     border-radius: 1em;
     border: 1px solid #E6E6E6;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
@@ -807,18 +807,37 @@ body::-webkit-scrollbar-thumb {
     border-radius: 22%;
     width: 100%;
     background-color: #779BE7;
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
   .m-line-2 {
     height: 3px;
     width: 60%;
     background-color: #779BE7;
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
   .m-line-3 {
     height: 3px;
     width: 100%;
     background-color: #779BE7;
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .m-line-1-active {
+    position: relative;
+    top: 11px;
+    transform: rotatez(45deg);
+  }
+
+  .m-line-2-active {
+    width: 0%;
+  }
+
+  .m-line-3-active {
+    position: relative;
+    bottom: 10px;
+    transform: rotatez(135deg);
   }
 
   .mobile-nav {
@@ -831,6 +850,7 @@ body::-webkit-scrollbar-thumb {
             backdrop-filter: blur(10px);
     display: flex;
     justify-content: end;
+    transition: all 0.5s linear;
   }
   .mobile-nav ul {
     width: 60%;
@@ -881,5 +901,13 @@ body::-webkit-scrollbar-thumb {
 
   .menu-hide {
     display: none;
+  }
+
+  .link-wrap {
+    font-size: 1.15em;
+  }
+
+  .return-link {
+    font-size: 1.15em;
   }
 }/*# sourceMappingURL=style.css.map */

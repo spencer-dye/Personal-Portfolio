@@ -914,4 +914,9 @@ body::-webkit-scrollbar-thumb {
   .return-link {
     font-size: 1.15em;
   }
+
+  .btn-alt {
+    border: 1px solid black;
+    font-size: 1.15em;
+  }
 }/*# sourceMappingURL=style.css.map */
